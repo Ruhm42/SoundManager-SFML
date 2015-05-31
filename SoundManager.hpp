@@ -10,6 +10,8 @@
 
 # include <SFML/Audio.hpp>
 
+	constexpr int maxSounds = 100;
+
 	class SoundManager
 	{
 		public:

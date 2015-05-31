@@ -38,6 +38,8 @@ void			SoundManager::playSound(std::string name)
 
 void			SoundManager::playEffect(std::string name)
 {
+	if (_sounds.size() > maxSounds)
+		return ;
 	_sounds.push(std::shared_ptr<SoundEffect>(new SoundEffect(name)));
 }
 

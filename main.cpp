@@ -24,6 +24,11 @@ int main()
 			std::cout << test;
 			sleep(3);
 			test.update();
+			/*
+			** call update to clear sounds already played 
+			** (max simultanates sounds in sfml is around 250, depends on system)
+			** here the safe value is 100
+			*/ 
 			std::cout << test;
 		}
 	}
